@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  title: string = 'Foo';
+  name = 'Will';
+  students = ['Phillly', 'Baby bys', 'Tania no Mania']
+  replaceStudents() {
+    this.students = ['foo', 'bar']
+  }
 }

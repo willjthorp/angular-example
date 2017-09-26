@@ -1,0 +1,12 @@
+<h2 *ngIf="students.length > 5">Thats a lot of students!</h2>
+
+<ul>
+
+  <li *ngFor="let student of students">
+    <app-student-card [student]="student"></app-student-card>
+  </li>
+
+  <input type="text" name="student-input" [(ngModel)]="newStudentName">
+  <button (click)="addStudent()" >Add a Student</button>
+
+</ul>
