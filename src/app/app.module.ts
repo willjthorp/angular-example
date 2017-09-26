@@ -7,6 +7,7 @@ import { StudentListComponent } from './student-list/student-list.component';
 import { StudentCardComponent } from './student-card/student-card.component';
 import { StudentPageComponent } from './student-page/student-page.component';
 import { SchoolPageComponent } from './school-page/school-page.component';
+import { FilterStudentsPipe } from './filter-students.pipe';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { SchoolPageComponent } from './school-page/school-page.component';
     StudentListComponent,
     StudentCardComponent,
     StudentPageComponent,
-    SchoolPageComponent
+    SchoolPageComponent,
+    FilterStudentsPipe
   ],
   imports: [
     BrowserModule,

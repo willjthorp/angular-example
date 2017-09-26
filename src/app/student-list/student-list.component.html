@@ -2,10 +2,11 @@
 
 <ul>
 
-  <li *ngFor="let student of students">
+  <li *ngFor="let student of students | filterStudents:minlength">
     <app-student-card [student]="student"></app-student-card>
   </li>
-
+  <input type="text" [(ngModel)]="minlength" >
+  <p>{{minlength}}</p>
   <input type="text" name="student-input" [(ngModel)]="newStudentName">
   <button (click)="addStudent()" >Add a Student</button>
 

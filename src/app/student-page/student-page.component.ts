@@ -6,9 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./student-page.component.scss']
 })
 export class StudentPageComponent implements OnInit {
-  students = ['Phillly', 'Baby bys', 'Tania no Mania']
+  students = [{
+    name: "fo",
+    date: new Date()
+  }, {
+    name: "salfjlsdjflsdjkflsjldfj",
+    date: new Date()
+  }]
   replaceStudents() {
-    this.students = ['foo', 'bar']
+    // this.students =
   }
   constructor() { }
 

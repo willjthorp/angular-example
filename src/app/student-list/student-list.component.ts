@@ -6,10 +6,10 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./student-list.component.scss']
 })
 export class StudentListComponent {
-  @Input() students: Array<string>;
+  @Input() students: Array<Object>;
   newStudentName: string = 'Random';
   addStudent() {
-    this.students.push(this.newStudentName);
+    this.students.push({name:this.newStudentName, date: new Date()});
     this.newStudentName = '';
   }
 }
