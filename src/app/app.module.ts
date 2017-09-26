@@ -5,12 +5,16 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { StudentListComponent } from './student-list/student-list.component';
 import { StudentCardComponent } from './student-card/student-card.component';
+import { StudentPageComponent } from './student-page/student-page.component';
+import { SchoolPageComponent } from './school-page/school-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     StudentListComponent,
-    StudentCardComponent
+    StudentCardComponent,
+    StudentPageComponent,
+    SchoolPageComponent
   ],
   imports: [
     BrowserModule,

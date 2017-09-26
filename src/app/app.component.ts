@@ -7,9 +7,20 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title: string = 'Foo';
+  page: string ;
+  pages: Array<Object> = [{
+    value:'school',
+    label:'school'
+  },{
+    value:'student',
+    label:'student'
+  },{
+    value:'books',
+    label:'books'
+  }]
   name = 'Will';
-  students = ['Phillly', 'Baby bys', 'Tania no Mania']
-  replaceStudents() {
-    this.students = ['foo', 'bar']
+  show(page:string){
+    this.page= page;
   }
+
 }
